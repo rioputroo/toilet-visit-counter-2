@@ -1,0 +1,11 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "node server/index.js"
+healthcheckPath = "/api/employees"
+healthcheckTimeout = 100
+
+[env]
+PORT = "3000"
+CLIENT_URL = "https://your-frontend-url.netlify.app"
